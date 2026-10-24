@@ -581,7 +581,7 @@ function BookCard({ book, lender, expanded, onToggle, isOwner, onEdit, onMarkLoa
             lender && (
               <a
                 className="btn-primary btn-small wa-link"
-                href={waLink(lender.whatsapp, `Hi ${lender.name}, I'm interested in borrowing "${book.title}" from the EDI Thought Forum Lending Library.`)}
+                href={waLink(lender.whatsapp, `Hi ${lender.name}, I'm interested in borrowing "${book.title}" from the EDI P2P Lending Library.`)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1399,7 +1399,7 @@ export default function LendingLibraryApp() {
 
       {view === "conditions" && (
         <StaticPage title="Conditions of use" eyebrow="Terms" onBack={() => setView("catalogue")}>
-          <p>Content for this page is coming soon. It will set out the terms of use for the EDI Thought Forum Community P2P Lending Library.</p>
+          <p>Content for this page is coming soon. It will set out the terms of use for the EDI P2P Lending Library.</p>
         </StaticPage>
       )}
 
