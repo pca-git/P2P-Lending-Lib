@@ -1,4 +1,4 @@
-# EDI Thought Forum Community P2P Lending Library
+# EDI P2P Lending Library
 
 React + Vite app. Data is stored in Firebase Firestore (free tier) and the site is hosted on GitHub Pages.
 
