@@ -1268,7 +1268,7 @@ export default function LendingLibraryApp() {
         .static-page h2 { font-family: 'Fraunces', serif; font-size: 26px; margin: 6px 0 16px; }
         .static-page p { color: var(--ink-soft); line-height: 1.6; }
         .static-page h3 { font-family: 'Fraunces', serif; font-size: 17px; margin: 22px 0 6px; }
-        .static-page ul { color: var(--ink-soft); line-height: 1.6; padding-left: 20px; margin: 0 0 8px; }
+        .static-page ul, .static-page ol { color: var(--ink-soft); line-height: 1.6; padding-left: 22px; margin: 0 0 8px; }
         .static-page li { margin-bottom: 4px; }
         .admin-page { max-width: 720px; }
         .admin-stats { font-family: 'Special Elite', monospace; font-size: 13px; color: var(--ink-soft); margin: -8px 0 20px; }
@@ -1399,7 +1399,46 @@ export default function LendingLibraryApp() {
 
       {view === "conditions" && (
         <StaticPage title="Conditions of use" eyebrow="Terms" onBack={() => setView("catalogue")}>
-          <p>Content for this page is coming soon. It will set out the terms of use for the EDI P2P Lending Library.</p>
+          <p>The EDI P2P Lending Library is a community catalogue where people lend books to each other. Please read how it works and the conditions below before you use it.</p>
+
+          <h3>How to register as a lender</h3>
+          <p>You do not need an account to browse or borrow. You only register if you want to lend books.</p>
+          <ol>
+            <li>Click <strong>Lender login</strong> at the top right, then choose the <strong>Become a lender</strong> tab.</li>
+            <li>Enter your name, your WhatsApp number and an approximate postcode. The first part of your postcode, such as EH1, is enough.</li>
+            <li>Choose a password of at least 4 characters, enter it twice, and click <strong>Register</strong>.</li>
+            <li>Next time, log in with the same name and password. If you forget your password, contact the admin to reset it. Once you are signed in you can change it with <strong>Change password</strong>.</li>
+          </ol>
+
+          <h3>How to add a book to the library</h3>
+          <ol>
+            <li>Log in as a lender and click <strong>+ Add a book</strong>.</li>
+            <li>Enter the title, author and language. These three are required. Genre and year of publication are optional.</li>
+            <li>Click <strong>Add to catalogue</strong>. The book appears on the shelf straight away.</li>
+            <li>Use the <strong>My books</strong> filter to see only your own books. Open a book's card to edit its details or remove it.</li>
+            <li>When you lend a book, open its card and click <strong>Mark as on loan</strong>. Enter who has it, the date borrowed and the expected return date. When it comes back, click <strong>Mark as returned</strong>. Loan details are visible to everyone while the book is out.</li>
+          </ol>
+
+          <h3>How to borrow a book</h3>
+          <ol>
+            <li>Browse the catalogue, or search by title, author, language or genre. The filters show only available books or books on loan.</li>
+            <li>Click a book's card to open it. Books marked ON LOAN show the expected return date.</li>
+            <li>For an available book, click the button with the lender's name, <strong>Contact … on WhatsApp</strong>. A message to the lender is prepared for you to send.</li>
+            <li>Agree with the lender whether the book can be lent, where and when you will collect it, and when you will return it.</li>
+            <li>The lender records the loan in the library. Return the book by the agreed date.</li>
+          </ol>
+
+          <h3>Conditions of use</h3>
+          <ol>
+            <li><strong>This is a meeting place only.</strong> The library is a platform where lenders and borrowers can find each other. The organisers and the admin do not own, hold, check or insure any book, and are not a party to any loan.</li>
+            <li><strong>Lending is the lender's choice.</strong> It is up to each lender whether to lend a book to any individual. A lender can say no without giving a reason.</li>
+            <li><strong>Lenders are responsible for their books.</strong> A lender takes responsibility for the books they list, including the details they enter, deciding who to lend to, and arranging collection and return.</li>
+            <li><strong>Borrowers look after what they borrow.</strong> Handle borrowed books with care and return them by the agreed date. Agree any other arrangements directly with the lender.</li>
+            <li><strong>Meet sensibly.</strong> Arrange handovers in a way that you and the other person are comfortable with.</li>
+            <li><strong>Be respectful.</strong> List only books you are happy to lend, and treat other members with courtesy. The admin may remove a listing or a lender who breaks these conditions.</li>
+            <li><strong>Report serious issues to the admin.</strong> If a book is lost or damaged, a dispute cannot be settled between you, or someone behaves inappropriately, tell the admin.</li>
+          </ol>
+          <p>How your details are stored and used is explained on the Privacy &amp; GDPR page.</p>
         </StaticPage>
       )}
 
