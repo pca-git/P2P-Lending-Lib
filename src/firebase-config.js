@@ -2,8 +2,8 @@
 // These values are safe to publish: access is controlled by the rules in firestore.rules.
 // Until you replace the placeholders, the app runs in demo mode and keeps data only in this browser.
 export const firebaseConfig = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_AUTH_DOMAIN",
-  projectId: "PASTE_PROJECT_ID",
-  appId: "PASTE_APP_ID",
+  apiKey: "AIzaSyCOFVHK1uT1Pd6tmEXd1xBpflnsm7rZvRQ",
+  authDomain: "p2p-lending-lib.firebaseapp.com",
+  projectId: "p2p-lending-lib",
+  appId: "1:598023677249:web:ec62e156e90101667fadc0",
 };
